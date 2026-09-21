@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Aquí están tus Flores Amarillas!</title>
+  
+  <!-- Google Fonts & Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Libraries: Three.js and OrbitControls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+
+  <!-- Flexible Layout Container -->
+  <div id="app-wrapper">
+
+    <!-- Top Header Card -->
+    <header id="header-card">
+      <span class="golden-badge">✨ Para ti ✨</span>
+      <h1 class="main-title">¡Aquí están tus flores amarillas!</h1>
+      <p class="subtitle">Un girasol eterno floreciendo solo para ti con todo mi cariño</p>
+    </header>
+
+    <!-- Isolated Middle Canvas Area -->
+    <main id="canvas-section">
+      <div id="webgl-container"></div>
+      <div class="drag-hint"><span>↔ Desliza para rotar ↔</span></div>
+    </main>
+
+    <!-- Bottom Controls Area -->
+    <footer id="footer-controls">
+      <button class="btn btn-primary" id="bloom-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+        Re-Florecer
+      </button>
+      <button class="btn btn-secondary" id="light-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42"/></svg>
+        Luz Solar
+      </button>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
